@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div.gallery{
+            border: 1px solid #ccc;
+        }
+        div.gallery:hover{
+            border: 1px solid #777;
+        }
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+        div desc{
+            padding: 15px;
+            text-align: auto;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .responsive{
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        @media only screen and (max-width: 700px){
+            .responsive{
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width: 500px){
+            .responsive{
+                width: 100%;
+            }
+        }
+        .clearfix::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Image Gallery</h2>
+    <h4>Resize the window to see the effect</h4>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img.fjords.jpg">
+                <img src="https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trolltunga Norway" width="300" height="200">
+            </a>
+            <div class="desc">Add a description od the image here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img.forest.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Add a description od the image here</div>
+            </div>
+        </div>
+    
+    <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img.lights.jpg">
+                    <img src="https://image.freepik.com/free-vector/blue-light-sparkles-background-with-copyspace_1017-20091.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                 <div class="desc">Add a description od the image here</div>
+            </div>
+        </div>
+
+    <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img.mountains.jpg">
+                    <img src="https://img.freepik.com/free-vector/abstract-colorful-flow-shapes-background_23-2148258092.jpg?size=626&ext=jpg" alt="Moutains" width="600" height="400">
+                </a>
+                    <div class="desc">Add a description od the image here</div>
+            </div>
+        </div>
+
+    <div class="clearfix"></div>
+
+    <div class="padding:6px;">
+        <p>This example use media queries to re-arrange the images on different screen
+        size: for screen larger than 700px wide, it will show four images side by side,
+        for screens smaller than 700px, it will show two images side by side. For screens
+        smaller
+            than 500px, the images will stack vertically (100%).</p>
+        <p>You will learn more about media queries and responsive web design later in our
+        CSS Tutorial.</p>
+    </div>
+
+</body>
+</html>
+
+
+    
